@@ -444,11 +444,11 @@ figcaption {
 .section.hello {
   background-color: #ebe5d2;
   background-image: url('../images/continuous-home-TP3.png');
-  background-position: 90% 100%;
+  background-position: 90%;
   background-repeat: no-repeat;
   background-size: 50%;
   flex-flow: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
   padding-top: 0;
@@ -3034,7 +3034,7 @@ figcaption {
 
 .container-hero {
   max-width: none;
-  margin-top: 100px;
+  margin-top: -100px;
   margin-left: 100px;
   padding-bottom: 0;
 }
@@ -3649,7 +3649,6 @@ figcaption {
 
   .container-hero {
     flex-flow: column;
-    margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -4604,7 +4603,7 @@ figcaption {
     background-image: url('../images/continuous-home-TP3.png');
     background-position: 90% 100%;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 75%;
     align-items: flex-start;
     height: 100svh;
     min-height: auto;
