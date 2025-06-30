@@ -339,7 +339,6 @@ figcaption {
 .nav-link.w--current {
   letter-spacing: 0;
   cursor: pointer;
-  background-color: #adadad80;
   margin-top: 0;
   padding: 0;
 }
@@ -1569,16 +1568,21 @@ figcaption {
   cursor: pointer;
   background-color: #f5793b;
   border-radius: .2em;
+  width: 115px;
   height: auto;
   padding: 5px 10px;
   font-size: 1rem;
   transition: background-color .3s;
-  display: none;
+  display: block;
   box-shadow: 0 2px 5px 1px #0003;
 }
 
 .button:hover {
   background-color: var(--medium-slate-blue);
+}
+
+.button.navmenu {
+  display: none;
 }
 
 .subscribe-success {
