@@ -2,31 +2,34 @@
   --gainsboro: #e2e5e5;
   --newgold: #a18444;
   --orange: #f5793b;
+  --sand: #ebe5d2;
   --white: #f9fcfc;
   --very-light-lint: #f5f6f0;
   --lighter-green-grey: #edefe4;
   --newnewred: #b54714;
   --sage-green: #b5c899;
+  --black: #111;
   --medium-slate-blue: #6464ff;
   --blue: #3030f5;
   --grey: #777;
-  --black: #111;
   --forest: #3e5035;
   --grey-2: #888;
-  --sand: #ebe5d2;
+  --semi-black: #00000080;
+  --textyellow: #f9e5aa;
+  --darkergrey: #222;
+  --darkgrey: #444;
+  --semi-green: #eef0e4bf;
+  --sage-light: #d2dfc3;
   --red: #fa2929;
   --very-light-gray: #f6f6f6;
   --light-lint: #a8b082;
   --lint: #9fa975;
   --gold: #f6cf67;
-  --sage-light: #d2dfc3;
   --clay: #ebd9d2;
   --newred: #a14e44;
   --newgrey: #f6f6f6;
   --charc: #434653;
-  --darkgrey: #444;
   --brown: #4b2512;
-  --textyellow: #f9e5aa;
   --transparent: #0000;
 }
 
@@ -436,7 +439,7 @@ figcaption {
 
 .nav-menu.clickopen {
   z-index: 50;
-  background-color: #ebe5d2;
+  background-color: var(--sand);
   background-image: url('../images/continuous-home-TP2.png');
   background-position: 93% 97%;
   background-repeat: no-repeat;
@@ -661,19 +664,6 @@ figcaption {
   background-color: var(--sage-green);
 }
 
-.section.hero-services {
-  background-color: #ebe5d2;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 100vh;
-  max-height: 100vh;
-  margin-right: 0;
-  padding: 0;
-  display: flex;
-  position: relative;
-  overflow: clip;
-}
-
 .section.hero-about {
   background-color: #0000;
   background-image: url('../images/castle-1055068.avif');
@@ -690,8 +680,8 @@ figcaption {
   overflow: clip;
 }
 
-.section.hero-contact, .section.hero-services {
-  background-color: #ebe5d2;
+.section.hero-contact {
+  background-color: var(--sand);
   justify-content: flex-end;
   align-items: center;
   min-height: 100vh;
@@ -720,16 +710,16 @@ figcaption {
 }
 
 .section-heading {
-  text-align: center;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: #222;
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: auto;
   min-width: auto;
   max-width: none;
+  color: var(--black);
+  text-align: center;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 0;
   font-size: 1.25rem;
   font-weight: 300;
@@ -812,8 +802,17 @@ figcaption {
 }
 
 .nav-text.bold-nav {
+  color: var(--black);
   letter-spacing: .2em;
   font-size: 1.875rem;
+}
+
+.nav-text.bold-nav:active {
+  color: var(--newgold);
+}
+
+.nav-text.bold-nav.book-online {
+  color: var(--orange);
 }
 
 .hello-title-wrap {
@@ -1072,6 +1071,7 @@ figcaption {
 }
 
 .slider-copy {
+  color: var(--black);
   padding: 0 0 10px;
   font-size: 1rem;
   font-style: italic;
@@ -1079,6 +1079,7 @@ figcaption {
 }
 
 .slider-title {
+  color: var(--black);
   margin-bottom: 5px;
   font-size: 1.25rem;
   line-height: 1.2;
@@ -1103,6 +1104,10 @@ figcaption {
   font-size: .875rem;
   position: absolute;
   inset: auto 10px 0% auto;
+}
+
+.slider-subtitle.testim {
+  margin-top: 10px;
 }
 
 .slider-titles {
@@ -1296,6 +1301,7 @@ figcaption {
 
 .projects-title {
   max-width: 24ch;
+  color: var(--black);
   margin-bottom: .3em;
   margin-left: 10%;
   font-size: 16px;
@@ -2035,13 +2041,14 @@ figcaption {
 }
 
 .faq-copy {
-  color: #888;
+  color: var(--grey);
   padding: 10px;
   font-size: .9rem;
   line-height: 1.5;
 }
 
 .faq-title {
+  color: var(--black);
   justify-content: flex-start;
   align-items: flex-start;
   font-size: 16px;
@@ -2435,7 +2442,7 @@ figcaption {
 }
 
 .bio-parag {
-  color: var(--grey-2);
+  color: var(--grey);
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.5;
@@ -3069,6 +3076,7 @@ figcaption {
 }
 
 .bio-heading2 {
+  color: var(--black);
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 20px;
@@ -3086,7 +3094,7 @@ figcaption {
 }
 
 .text-ticker_text {
-  color: #f5793b;
+  color: var(--orange);
   letter-spacing: -.03em;
   font-size: 5.5rem;
   font-weight: 400;
@@ -3385,6 +3393,7 @@ figcaption {
 }
 
 .contact-block-para {
+  color: var(--black);
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1rem;
@@ -3411,9 +3420,9 @@ figcaption {
 }
 
 .text-ticker_text-copy.volkyell {
+  background-color: var(--semi-black);
   opacity: 1;
-  color: #f9e5aa;
-  background-color: #22222280;
+  color: var(--textyellow);
   padding: 20px 20px 10px;
   font-family: Vollkorn, serif;
   display: block;
@@ -3427,11 +3436,12 @@ figcaption {
 }
 
 .text-ticker_text-copy.volkyell.right {
+  background-color: var(--semi-black);
   top: 60%;
 }
 
 .text-ticker_text-copy.volkyell.contact {
-  background-color: #22222280;
+  background-color: var(--semi-black);
   inset: auto auto 20px 20px;
 }
 
@@ -3441,7 +3451,7 @@ figcaption {
 }
 
 .book-now.book-nav {
-  background-color: #3e5035;
+  background-color: var(--forest);
   flex-flow: column;
   height: auto;
   display: block;
@@ -3489,9 +3499,9 @@ figcaption {
 }
 
 .book-now-text {
-  color: #b5c899;
-  text-align: right;
   max-width: none;
+  color: var(--sage-green);
+  text-align: right;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -3592,7 +3602,7 @@ figcaption {
 }
 
 .footer-2 {
-  background-color: #222;
+  background-color: var(--darkergrey);
   padding-bottom: 20px;
 }
 
@@ -3766,7 +3776,7 @@ figcaption {
 }
 
 .cclogo {
-  height: 40px;
+  height: 50px;
 }
 
 .text-span-8 {
@@ -4280,13 +4290,14 @@ figcaption {
 
 .pricing-description {
   max-width: 250px;
+  color: var(--darkgrey);
   margin-top: 1em;
   font-family: Varela, sans-serif;
   font-size: 1rem;
 }
 
 .pricing-description.light {
-  color: #edefe4;
+  color: var(--lighter-green-grey);
   -webkit-text-stroke-color: #edefe4;
 }
 
@@ -4299,7 +4310,7 @@ figcaption {
 }
 
 .price-tag.light {
-  color: #edefe4;
+  color: var(--lighter-green-grey);
 }
 
 .price-options {
@@ -4324,15 +4335,19 @@ figcaption {
 }
 
 .button-2.button-secondary {
+  background-color: var(--lighter-green-grey);
   color: #000;
-  background-color: #fff;
   font-family: Inter, sans-serif;
   font-size: 1.2rem;
 }
 
 .button-2.button-secondary:hover {
-  color: #fff;
+  color: var(--lighter-green-grey);
   background-color: #000;
+}
+
+.button-2.button-secondary.white {
+  background-color: var(--white);
 }
 
 .container-1201 {
@@ -4370,7 +4385,7 @@ figcaption {
 
 .pricing-plan.recommended {
   z-index: 9;
-  background-color: #3e5035;
+  background-color: var(--forest);
   margin: -25px 0;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -4378,7 +4393,7 @@ figcaption {
 }
 
 .pricing-plan.mid {
-  background-color: #edefe4bf;
+  background-color: var(--semi-green);
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 75px;
@@ -4398,8 +4413,7 @@ figcaption {
 }
 
 .pricing-title.light {
-  color: #edefe4;
-  -webkit-text-stroke-color: #edefe4;
+  color: var(--lighter-green-grey);
 }
 
 .price-wrap {
@@ -4418,7 +4432,7 @@ figcaption {
 }
 
 .dollar-sign.light {
-  color: #edefe4;
+  color: var(--lighter-green-grey);
 }
 
 .month {
@@ -4430,7 +4444,7 @@ figcaption {
 
 .price {
   color: #000;
-  font-family: Vollkorn, serif;
+  font-family: Lato, sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1;
@@ -4438,7 +4452,7 @@ figcaption {
 }
 
 .price.light {
-  color: #edefe4;
+  color: var(--lighter-green-grey);
   -webkit-text-stroke-color: #edefe4;
 }
 
@@ -4538,7 +4552,7 @@ figcaption {
   z-index: 5;
   background-color: #edefe480;
   grid-template-columns: 2fr .75fr .75fr .75fr;
-  padding: 20px 10px 20px 20px;
+  padding: 20px;
   position: static;
   top: 0;
 }
@@ -4908,7 +4922,7 @@ figcaption {
 }
 
 .container-three.green {
-  background-color: #d2dfc3;
+  background-color: var(--sage-light);
   border-radius: 40px;
 }
 
@@ -4923,16 +4937,16 @@ figcaption {
 }
 
 .section-heading-three {
-  text-align: left;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: #222;
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: flex-start;
   width: auto;
   min-width: auto;
   max-width: none;
+  color: var(--black);
+  text-align: left;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 300;
@@ -4955,11 +4969,14 @@ figcaption {
 }
 
 .section-heading-three.centre {
-  color: #222;
+  color: var(--black);
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
 }
 
 .section-heading-three.light {
-  color: #edefe4;
+  color: var(--lighter-green-grey);
 }
 
 .section-left {
@@ -5046,10 +5063,10 @@ figcaption {
 }
 
 .button-2-round.button-secondary {
+  border-color: var(--orange);
   pointer-events: auto;
-  color: #edefe4;
+  color: var(--lighter-green-grey);
   background-color: #0000;
-  border-color: #f5793b;
   border-radius: 30px;
   margin-top: 40px;
   font-family: Inter, sans-serif;
@@ -5058,8 +5075,8 @@ figcaption {
 }
 
 .button-2-round.button-secondary:hover {
-  color: #fff;
-  background-color: #000;
+  background-color: var(--orange);
+  color: var(--black);
 }
 
 .button-2-round.button-secondary.green {
@@ -5072,9 +5089,17 @@ figcaption {
   background-color: #b5c899;
 }
 
+.button-2-round.button-secondary.green.centre {
+  border-color: var(--black);
+}
+
+.button-2-round.button-secondary.green.centre:hover {
+  background-color: var(--sage-green);
+}
+
 .button-2-round.button-secondary.gold {
+  border-color: var(--newgold);
   color: #000;
-  border-color: #a18444;
 }
 
 .button-2-round.button-secondary.gold:hover {
@@ -5122,9 +5147,9 @@ figcaption {
 }
 
 .section-sub-three2 {
-  color: #222;
-  text-align: left;
   width: 700px;
+  color: var(--black);
+  text-align: left;
   margin-top: 0;
   padding-bottom: 0;
   padding-right: 40px;
@@ -5262,12 +5287,8 @@ figcaption {
   display: flex;
 }
 
-.text-span-12 {
-  color: #a18444;
-}
-
-.italic-text-4 {
-  color: #a18444;
+.text-span-12, .italic-text-4 {
+  color: var(--newgold);
   font-style: normal;
   font-weight: 400;
 }
@@ -5282,21 +5303,31 @@ figcaption {
   font-style: italic;
 }
 
-.text-span-15, .text-span-16 {
+.text-span-15 {
+  color: var(--newgold);
+}
+
+.text-span-16 {
   color: #a18444;
 }
 
 .div-block-9 {
-  border-top: 2px solid #3e5035;
-  justify-content: center;
+  border-top: 2px solid var(--grey);
   width: 200px;
+  color: var(--grey);
+  justify-content: center;
   margin-bottom: 40px;
   display: block;
   position: static;
 }
 
-.text-span-17, .text-span-18 {
+.text-span-17 {
   color: #a18444;
+  font-style: italic;
+}
+
+.text-span-18 {
+  color: var(--newgold);
   font-style: italic;
 }
 
@@ -5308,7 +5339,7 @@ figcaption {
 }
 
 .block-quote-3 {
-  color: #3e5035;
+  color: var(--forest);
   border-left-width: .5rem;
   border-left-color: #3e5035;
   margin: 40px 0;
@@ -5320,7 +5351,7 @@ figcaption {
 }
 
 .block-quote-3.light {
-  color: #f5793b;
+  color: var(--orange);
   border-left-color: #f5793b;
   margin-bottom: 20px;
   margin-right: 0;
@@ -5450,6 +5481,14 @@ figcaption {
 
 .text-block-4 {
   margin-bottom: 10px;
+}
+
+.image-laptop {
+  display: block;
+}
+
+.italic-text-5 {
+  color: var(--blue);
 }
 
 @media screen and (min-width: 1920px) {
@@ -6345,6 +6384,7 @@ figcaption {
 
   .text-ticker_text-copy.volkyell.right {
     max-width: 700px;
+    padding-left: 20px;
     top: 70%;
     left: auto;
     right: 0;
@@ -6969,6 +7009,10 @@ figcaption {
 
   .slider-subtitle {
     max-width: 420px;
+  }
+
+  .slider-subtitle.hero {
+    max-width: 550px;
   }
 
   .slider-author-image {
@@ -7649,6 +7693,11 @@ figcaption {
     padding: 7px 10px;
   }
 
+  .pricing-comparison-wrap {
+    min-width: 80%;
+    max-width: none;
+  }
+
   .comparison-feature {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -7661,6 +7710,7 @@ figcaption {
   }
 
   .comparison-row.header {
+    grid-template-columns: 2fr 2fr 2fr;
     padding-top: 18px;
     padding-bottom: 18px;
   }
@@ -8151,6 +8201,10 @@ figcaption {
     font-size: .75rem;
   }
 
+  .slider-subtitle.hero {
+    font-size: .9rem;
+  }
+
   .clients-item {
     grid-column-gap: 0rem;
     grid-row-gap: 0rem;
@@ -8509,6 +8563,10 @@ figcaption {
 
   .faq-item-number {
     margin-top: .4em;
+  }
+
+  .hero-subtitle {
+    width: 90%;
   }
 
   .paragraph {
@@ -9086,6 +9144,24 @@ figcaption {
     margin-top: 20px;
   }
 
+  .pricing-comparison-wrap {
+    width: 100%;
+  }
+
+  .comparison-feature {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .comparison-item.check {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .comparison-header-title {
+    font-size: 1.1rem;
+  }
+
   .section-copy {
     font-size: 1.25rem;
   }
@@ -9103,6 +9179,10 @@ figcaption {
 
   .section-copy.intro-copy {
     text-align: left;
+  }
+
+  .comparison-title {
+    font-size: 1.1rem;
   }
 
   .container-1203 {
