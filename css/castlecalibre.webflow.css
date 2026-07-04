@@ -5501,10 +5501,6 @@ figcaption {
     background-color: #ebe5d2;
   }
 
-  .section.hello {
-    background-color: #f2ead6;
-  }
-
   .section.quotes {
     background-color: #edefe4;
   }
@@ -5537,8 +5533,12 @@ figcaption {
     background-color: var(--newgold);
   }
 
-  .section.hero-services, .section.hero-contact {
+  .section.hero-services {
     background-color: #ebe5d2;
+    padding-right: 0;
+  }
+
+  .section.hero-contact {
     padding-right: 0;
   }
 
