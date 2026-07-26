@@ -2330,6 +2330,7 @@ figcaption {
 
 .section-sub-three.card {
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .bold-text {
@@ -5080,10 +5081,15 @@ figcaption {
   color: var(--2ivory);
 }
 
+.section-heading-three.secleft {
+  margin-bottom: 1rem;
+}
+
 .section-heading-three.card {
   margin-top: 0;
   margin-bottom: 1rem;
   padding-top: 0;
+  font-size: 1rem;
 }
 
 .section-left {
@@ -5744,10 +5750,6 @@ figcaption {
 }
 
 @media screen and (min-width: 1920px) {
-  .section.quotes {
-    background-color: #edefe4;
-  }
-
   .section.projects {
     padding-bottom: 100px;
   }
@@ -5845,10 +5847,6 @@ figcaption {
     left: -140px;
   }
 
-  .book-now.book-nav {
-    background-color: #163806;
-  }
-
   .book-now.affil {
     background-color: #fff;
     height: auto;
@@ -5860,10 +5858,6 @@ figcaption {
 
   .book-now-button {
     display: block;
-  }
-
-  .book-now-text {
-    color: #edefe4;
   }
 
   .book-now-text.dark {
@@ -5884,13 +5878,6 @@ figcaption {
 
   .pricing-plan {
     border: 1px solid #dcdcdc;
-  }
-
-  .pricing-plan.recommended {
-    background-color: #163806;
-    margin-top: -50px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .pricing-plan-grid {
@@ -6036,10 +6023,6 @@ figcaption {
     background-color: #ebe5d2;
     width: auto;
     max-width: 1200px;
-  }
-
-  .logos-title-large-2 {
-    background-color: #edefe4;
   }
 
   .clients-wrapper-2 {
@@ -9499,6 +9482,8 @@ figcaption {
   }
 
   .container-three {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     max-width: none;
     padding-left: 20px;
     padding-right: 20px;
@@ -9537,6 +9522,7 @@ figcaption {
 
   .section-heading-three {
     text-align: left;
+    font-size: 1.1rem;
   }
 
   .section-heading-three.nav-heading {
@@ -9554,6 +9540,10 @@ figcaption {
   .para-three {
     padding-right: 0;
     font-size: .9rem;
+  }
+
+  .para-three._500 {
+    width: 100%;
   }
 
   .button-2-round.button-secondary {
@@ -9804,7 +9794,7 @@ figcaption {
     grid-area: 3 / 1 / 4 / 3;
   }
 
-  #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c590-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c59f-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5ae-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5bd-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5cc-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5db-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5eb-7034c53f {
+  #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c590-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c59f-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5ae-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5bd-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5cc-7034c53f, #w-node-_7cf3ff5b-4a7e-29fe-97a4-d2e47034c5db-7034c53f {
     grid-area: Feature-Row;
   }
 
